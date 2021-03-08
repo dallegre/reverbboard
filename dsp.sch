@@ -12759,6 +12759,7 @@ high speed (Philips)</description>
 <part name="C36" library="dan" deviceset="C-US" device="050-025X075" value="100n"/>
 <part name="GND29" library="dan" deviceset="GND" device=""/>
 <part name="C37" library="dan" deviceset="CPOL-US" device="E2-4" value="1u"/>
+<part name="GND30" library="dan" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12947,6 +12948,7 @@ high speed (Philips)</description>
 <instance part="C36" gate="G$1" x="200.66" y="67.31"/>
 <instance part="GND29" gate="1" x="200.66" y="57.15"/>
 <instance part="C37" gate="G$1" x="209.55" y="67.31"/>
+<instance part="GND30" gate="1" x="203.2" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -13311,6 +13313,17 @@ high speed (Philips)</description>
 <wire x1="209.55" y1="62.23" x2="209.55" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="209.55" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="91"/>
 <junction x="200.66" y="60.96"/>
+</segment>
+<segment>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="203.2" y1="86.36" x2="203.2" y2="87.63" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="MODE"/>
+<wire x1="189.23" y1="85.09" x2="199.39" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="85.09" x2="199.39" y2="87.63" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="CSB"/>
+<wire x1="199.39" y1="87.63" x2="189.23" y2="87.63" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="87.63" x2="199.39" y2="87.63" width="0.1524" layer="91"/>
+<junction x="199.39" y="87.63"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
