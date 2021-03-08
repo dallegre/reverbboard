@@ -8669,28 +8669,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
-<package name="TO92-EBC">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
- grid 5.08 mm</description>
-<wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583"/>
-<wire x1="1.136" y1="-1.397" x2="-1.136" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-2.413" y1="-0.1341" x2="-2.664" y2="-1.397" width="0.127" layer="51" curve="27.9376"/>
-<wire x1="-2.664" y1="-1.397" x2="-2.413" y2="-2.4059" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="-1.404" y1="-1.397" x2="-2.664" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-2.4135" y1="-2.4059" x2="-2.095" y2="-2.921" width="0.127" layer="21" curve="13.0385"/>
-<wire x1="-1.136" y1="-1.397" x2="-1.404" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-2.4059" x2="2.664" y2="-1.397" width="0.127" layer="51" curve="22.4788"/>
-<wire x1="2.664" y1="-1.397" x2="2.413" y2="-0.1341" width="0.127" layer="51" curve="27.9376"/>
-<wire x1="2.664" y1="-1.397" x2="1.404" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="1.404" y1="-1.397" x2="1.136" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="2.095" y1="-2.921" x2="2.4247" y2="-2.3818" width="0.127" layer="21" curve="13.6094"/>
-<pad name="C" x="-2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<pad name="B" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="CHERRY-MX-LED">
 <description>Cherry MX series keyswitch footprint with additional holes for LED</description>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="21"/>
@@ -9062,24 +9040,6 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
 <text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
-</symbol>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
 <symbol name="CHERRY-MX-LED">
 <description>Schematic part for Cherry MX series keyswitch with additional pins for LED</description>
@@ -12260,25 +12220,6 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BC550*" prefix="Q">
-<description>&lt;b&gt;NPN Transistor&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO92-EBC">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<technologies>
-<technology name="B"/>
-<technology name="C"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CHERRY-MX-LED">
 <description>Cherry MX series keyswitch with LED</description>
 <gates>
@@ -12709,13 +12650,11 @@ high speed (Philips)</description>
 <part name="R17" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
 <part name="IC1" library="dan" deviceset="OPA2134" device="P"/>
 <part name="R18" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
-<part name="R19" library="dan" deviceset="R-US_" device="0309/V" value="9k"/>
-<part name="R20" library="dan" deviceset="R-US_" device="0309/V" value="4.7k"/>
+<part name="R19" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
 <part name="GND21" library="dan" deviceset="GND" device=""/>
 <part name="R21" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
 <part name="R23" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
 <part name="IC2" library="dan" deviceset="OPA2134" device="P"/>
-<part name="C23" library="dan" deviceset="CPOL-US" device="E2.5-7" value="2.2u"/>
 <part name="GND22" library="dan" deviceset="GND" device=""/>
 <part name="GND17" library="dan" deviceset="GND" device=""/>
 <part name="R25" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
@@ -12758,7 +12697,6 @@ high speed (Philips)</description>
 <part name="D3" library="dan" deviceset="1N4148" device="DO35-7"/>
 <part name="GND33" library="dan" deviceset="GND" device=""/>
 <part name="R1" library="dan" deviceset="R-US_" device="0309/V" value="10"/>
-<part name="Q1" library="dan" deviceset="BC550*" device="" technology="B"/>
 <part name="U$3" library="dan" deviceset="CHERRY-MX-LED" device=""/>
 <part name="U$4" library="dan" deviceset="CHERRY-MX-LED" device=""/>
 <part name="OK1" library="dan" deviceset="6N138" device=""/>
@@ -12806,6 +12744,8 @@ high speed (Philips)</description>
 <part name="GND43" library="dan" deviceset="GND" device=""/>
 <part name="R45" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
 <part name="R46" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
+<part name="IC3" library="dan" deviceset="OPA2134" device="P"/>
+<part name="C23" library="dan" deviceset="C-US" device="050-025X075" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -12877,15 +12817,13 @@ high speed (Philips)</description>
 <instance part="IC1" gate="P" x="292.1" y="210.82"/>
 <instance part="R18" gate="G$1" x="104.14" y="166.37" rot="R90"/>
 <instance part="R19" gate="G$1" x="104.14" y="182.88" rot="R90"/>
-<instance part="R20" gate="G$1" x="120.65" y="161.29" rot="R90"/>
 <instance part="GND21" gate="1" x="292.1" y="199.39"/>
 <instance part="R21" gate="G$1" x="297.18" y="127"/>
 <instance part="R23" gate="G$1" x="294.64" y="191.77"/>
 <instance part="IC2" gate="A" x="271.78" y="45.72" rot="R180"/>
 <instance part="IC2" gate="B" x="270.51" y="-10.16" rot="R180"/>
 <instance part="IC2" gate="P" x="271.78" y="45.72" rot="R180"/>
-<instance part="C23" gate="G$1" x="128.27" y="162.56"/>
-<instance part="GND22" gate="1" x="128.27" y="151.13"/>
+<instance part="GND22" gate="1" x="120.65" y="151.13"/>
 <instance part="GND17" gate="1" x="264.16" y="54.61"/>
 <instance part="R25" gate="G$1" x="267.97" y="63.5"/>
 <instance part="R26" gate="G$1" x="267.97" y="0"/>
@@ -12932,7 +12870,6 @@ high speed (Philips)</description>
 <instance part="D3" gate="G$1" x="-3.81" y="168.91" rot="R90"/>
 <instance part="GND33" gate="1" x="-3.81" y="162.56"/>
 <instance part="R1" gate="G$1" x="-36.83" y="175.26" rot="R180"/>
-<instance part="Q1" gate="G$1" x="118.11" y="173.99"/>
 <instance part="U$3" gate="G$1" x="-63.5" y="132.08" rot="R90"/>
 <instance part="U$4" gate="G$1" x="-46.99" y="132.08" rot="R90"/>
 <instance part="OK1" gate="G$1" x="76.2" y="212.09"/>
@@ -12980,6 +12917,10 @@ high speed (Philips)</description>
 <instance part="GND43" gate="1" x="-49.53" y="85.09"/>
 <instance part="R45" gate="G$1" x="-66.04" y="111.76" rot="R270"/>
 <instance part="R46" gate="G$1" x="-49.53" y="111.76" rot="R270"/>
+<instance part="IC3" gate="A" x="120.65" y="173.99"/>
+<instance part="IC3" gate="B" x="177.8" y="231.14"/>
+<instance part="IC3" gate="P" x="120.65" y="173.99"/>
+<instance part="C23" gate="G$1" x="93.98" y="166.37"/>
 </instances>
 <busses>
 </busses>
@@ -13008,12 +12949,12 @@ high speed (Philips)</description>
 <junction x="-12.7" y="175.26"/>
 </segment>
 <segment>
-<wire x1="120.65" y1="179.07" x2="120.65" y2="189.23" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="120.65" y1="189.23" x2="104.14" y2="189.23" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="189.23" x2="104.14" y2="187.96" width="0.1524" layer="91"/>
 <label x="109.22" y="189.23" size="1.778" layer="95"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
+<pinref part="IC3" gate="P" pin="V+"/>
+<wire x1="120.65" y1="181.61" x2="120.65" y2="189.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
@@ -13168,20 +13109,6 @@ high speed (Philips)</description>
 <wire x1="292.1" y1="201.93" x2="292.1" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="120.65" y1="156.21" x2="120.65" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="154.94" x2="104.14" y2="161.29" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="-"/>
-<wire x1="128.27" y1="157.48" x2="128.27" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="154.94" x2="120.65" y2="154.94" width="0.1524" layer="91"/>
-<junction x="120.65" y="154.94"/>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="128.27" y1="153.67" x2="128.27" y2="154.94" width="0.1524" layer="91"/>
-<junction x="128.27" y="154.94"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="P" pin="V-"/>
 <wire x1="271.78" y1="53.34" x2="271.78" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -13324,6 +13251,19 @@ high speed (Philips)</description>
 <pinref part="C32" gate="G$1" pin="2"/>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="87.63" x2="-66.04" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="P" pin="V-"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="120.65" y1="153.67" x2="120.65" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="120.65" y1="154.94" x2="120.65" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="154.94" x2="104.14" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="154.94" x2="120.65" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="161.29" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="154.94" x2="104.14" y2="154.94" width="0.1524" layer="91"/>
+<junction x="104.14" y="154.94"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -13861,27 +13801,29 @@ high speed (Philips)</description>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="115.57" y1="173.99" x2="104.14" y2="173.99" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="173.99" x2="104.14" y2="171.45" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="177.8" x2="104.14" y2="173.99" width="0.1524" layer="91"/>
-<junction x="104.14" y="173.99"/>
-<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="104.14" y1="177.8" x2="104.14" y2="176.53" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="+IN"/>
+<wire x1="104.14" y1="176.53" x2="104.14" y2="171.45" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="176.53" x2="104.14" y2="176.53" width="0.1524" layer="91"/>
+<junction x="104.14" y="176.53"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="168.91" x2="93.98" y2="176.53" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="176.53" x2="104.14" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="4.5V" class="0">
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="120.65" y1="166.37" x2="120.65" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="167.64" x2="120.65" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="167.64" x2="128.27" y2="167.64" width="0.1524" layer="91"/>
-<junction x="120.65" y="167.64"/>
 <label x="137.16" y="167.64" size="1.778" layer="95"/>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="128.27" y1="167.64" x2="143.51" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="165.1" x2="128.27" y2="167.64" width="0.1524" layer="91"/>
-<junction x="128.27" y="167.64"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="135.89" y1="167.64" x2="143.51" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="-IN"/>
+<wire x1="113.03" y1="171.45" x2="111.76" y2="171.45" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="171.45" x2="111.76" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="167.64" x2="135.89" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="167.64" x2="135.89" y2="173.99" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="OUT"/>
+<wire x1="135.89" y1="173.99" x2="128.27" y2="173.99" width="0.1524" layer="91"/>
+<junction x="135.89" y="167.64"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
