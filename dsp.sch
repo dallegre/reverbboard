@@ -12761,11 +12761,14 @@ high speed (Philips)</description>
 <part name="C37" library="dan" deviceset="CPOL-US" device="E2-4" value="1u"/>
 <part name="GND30" library="dan" deviceset="GND" device=""/>
 <part name="R48" library="dan" deviceset="R-US_" device="0309/V" value="1k"/>
+<part name="MCLK2" library="synthdiy" deviceset="2,0/0,9-S" device=""/>
+<part name="R49" library="dan" deviceset="R-US_" device="R0603" value="0"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="27.94" y="104.14" size="1.778" layer="91">Can't use PB11</text>
+<text x="27.94" y="113.03" size="1.778" layer="91">Can't use PB11</text>
+<text x="27.94" y="109.22" size="1.778" layer="91">MCLK2 is for F405 </text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="53.34" y="40.64"/>
@@ -12878,7 +12881,7 @@ high speed (Philips)</description>
 <instance part="U$2" gate="G$1" x="-59.69" y="175.26"/>
 <instance part="U$2" gate="G$2" x="-52.07" y="186.69"/>
 <instance part="U4" gate="A" x="43.18" y="167.64"/>
-<instance part="D1" gate="G$1" x="67.31" y="177.8" rot="R270"/>
+<instance part="D1" gate="G$1" x="67.31" y="179.07" rot="R90"/>
 <instance part="GND31" gate="1" x="67.31" y="171.45"/>
 <instance part="GND32" gate="1" x="80.01" y="156.21"/>
 <instance part="D2" gate="G$1" x="-26.67" y="175.26"/>
@@ -12951,6 +12954,8 @@ high speed (Philips)</description>
 <instance part="C37" gate="G$1" x="209.55" y="67.31"/>
 <instance part="GND30" gate="1" x="203.2" y="83.82"/>
 <instance part="R48" gate="G$1" x="2.54" y="1.27" rot="R180"/>
+<instance part="MCLK2" gate="P" x="36.83" y="-41.91" rot="R270"/>
+<instance part="R49" gate="G$1" x="13.97" y="66.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13202,11 +13207,6 @@ high speed (Philips)</description>
 <wire x1="311.15" y1="38.1" x2="311.15" y2="36.83" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="GND31" gate="1" pin="GND"/>
-<wire x1="67.31" y1="175.26" x2="67.31" y2="173.99" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="20.32" y1="142.24" x2="20.32" y2="143.51" width="0.1524" layer="91"/>
@@ -13331,6 +13331,11 @@ high speed (Philips)</description>
 <wire x1="199.39" y1="87.63" x2="189.23" y2="87.63" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="87.63" x2="199.39" y2="87.63" width="0.1524" layer="91"/>
 <junction x="199.39" y="87.63"/>
+</segment>
+<segment>
+<pinref part="GND31" gate="1" pin="GND"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="67.31" y1="173.99" x2="67.31" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -13550,9 +13555,9 @@ high speed (Philips)</description>
 <label x="48.26" y="-58.42" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA3/USART2_RX"/>
-<wire x1="22.86" y1="66.04" x2="6.35" y2="66.04" width="0.1524" layer="91"/>
-<label x="8.89" y="66.04" size="1.778" layer="95"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<wire x1="8.89" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="91"/>
+<label x="0" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -14264,10 +14269,10 @@ high speed (Philips)</description>
 <wire x1="62.23" y1="175.26" x2="62.23" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="62.23" y1="182.88" x2="48.26" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="67.31" y1="180.34" x2="67.31" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="67.31" y1="182.88" x2="62.23" y2="182.88" width="0.1524" layer="91"/>
 <junction x="62.23" y="182.88"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="67.31" y1="181.61" x2="67.31" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -14639,6 +14644,25 @@ high speed (Philips)</description>
 <pinref part="U$1" gate="G$1" pin="REGVDD_3"/>
 <pinref part="R48" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="1.27" x2="-2.54" y2="1.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MCLK2" class="0">
+<segment>
+<label x="36.83" y="-59.69" size="1.778" layer="95" rot="R270"/>
+<pinref part="MCLK2" gate="P" pin="P"/>
+<wire x1="36.83" y1="-64.77" x2="36.83" y2="-44.45" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="83.82" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<label x="86.36" y="58.42" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PC6"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA3/USART2_RX"/>
+<pinref part="R49" gate="G$1" pin="1"/>
+<wire x1="19.05" y1="66.04" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
