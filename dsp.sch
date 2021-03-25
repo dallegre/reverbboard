@@ -14062,10 +14062,10 @@ Source: www.kingbright.com</description>
 <part name="R13" library="dan" deviceset="R-US_" device="0309/V" value="5.6k"/>
 <part name="C20" library="dan" deviceset="C-US" device="050-025X075" value="220p"/>
 <part name="C21" library="dan" deviceset="CPOL-US" device="E2.5-7" value="1u"/>
-<part name="R14" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
+<part name="R14" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
 <part name="R15" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
 <part name="C22" library="dan" deviceset="CPOL-US" device="E2.5-7" value="1u"/>
-<part name="R16" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
+<part name="R16" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>
 <part name="R17" library="dan" deviceset="R-US_" device="0309/V" value="47k"/>
 <part name="IC1" library="dan" deviceset="OPA2134" device="P"/>
 <part name="R18" library="dan" deviceset="R-US_" device="0309/V" value="10k"/>

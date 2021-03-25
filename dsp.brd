@@ -1315,7 +1315,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="85.09" y="82.804" size="1.27" layer="21" font="vector" ratio="15"/>
 <attribute name="VALUE" x="84.836" y="81.3562" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
-<element name="R14" library="dan" package="0309V" value="47k" x="180.34" y="82.804" smashed="yes" rot="R270">
+<element name="R14" library="dan" package="0309V" value="10k" x="180.34" y="82.804" smashed="yes" rot="R270">
 <attribute name="NAME" x="178.562" y="87.63" size="1.27" layer="21" font="vector" ratio="15"/>
 <attribute name="VALUE" x="178.562" y="85.9282" size="1.27" layer="21" font="vector" ratio="15"/>
 </element>
@@ -1323,7 +1323,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="100.076" y="25.908" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="100.076" y="24.3078" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R16" library="dan" package="0309V" value="47k" x="155.448" y="71.628" smashed="yes" rot="R90">
+<element name="R16" library="dan" package="0309V" value="10k" x="155.448" y="71.628" smashed="yes" rot="R90">
 <attribute name="NAME" x="154.178" y="72.898" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="153.67" y="70.7898" size="1.27" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
